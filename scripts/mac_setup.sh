@@ -119,6 +119,11 @@ EOF
 #
 # 7. Install Languages: Elixir Erlang and Node
 #
+cat << 'EOF' >> ~/.zshrc
+# Asdf Erlang install fix
+export KERL_BUILD_DOCS="yes"
+EOF
+#
 asdf plugin-add erlang
 asdf plugin-add elixir
 asdf plugin-add nodejs
